@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-结构伪类2</title>
+    <style>
+        /* 选中div的后代p, p的父级是谁无所谓, 但必须是父亲的第一个儿子 */
+        /*
+        div p:last-child {
+            color: deepskyblue;
+        }
+         */
+
+
+        /* nth-child(n): 选中第五个p儿子 */
+        /*
+        div > p:nth-child(5){
+            color: deepskyblue;
+        }
+         */
+
+
+        /*!* 选择偶数个 *!*/
+        /*div > p:nth-child(2n){*/
+        /*    color: deepskyblue;*/
+        /*}*/
+        /*!* 选择奇数个 *!*/
+        /*div > p:nth-child(2n+1){*/
+        /*    background-color: yellow;*/
+        /*}*/
+        /*!* 选择前五个 *!*/
+        /*div > p:nth-child(-n+5){*/
+        /*    border: 4px solid red;*/
+        /*}*/
+        /*!* 选择后五个 *!*/
+        /*div > p:nth-child(n+6){*/
+        /*    border: 4px solid green;*/
+        /*}*/
+        /*!*  括号中必须是 an + b 形式  *!*/
+
+
+        /* --- 结构三 --- */
+        div > p:first-of-type{
+            color: deepskyblue;
+        }
+        div > p:last-of-type{
+            color: pink;
+        }
+
+        div > p:nth-of-type(2n){
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!--
+    <div>
+        <p>老大</p>
+        <p>老二</p>
+        <p>老三</p>
+        <p>老四</p>
+        <p>老五</p>
+        <p>老六</p>
+        <p>老七</p>
+        <p>老八</p>
+    </div>
+    -->
+
+    <!-- 结构2 -->
+<!--    <div>-->
+<!--        <p>老大</p>-->
+<!--        <p>老二</p>-->
+<!--        <p>老三</p>-->
+<!--        <p>老四</p>-->
+<!--        <p>老五</p>-->
+<!--        <p>老六</p>-->
+<!--        <p>老七</p>-->
+<!--        <p>老八</p>-->
+<!--        <p>老九</p>-->
+<!--        <p>老十</p>-->
+<!--    </div>-->
+
+    <!-- 结构3 -->
+    <div>
+        <span>老0</span>
+        <p>老大</p>
+        <p>老二</p>
+        <p>老三</p>
+        <p>老四</p>
+        <p>老五</p>
+        <p>老六</p>
+        <p>老七</p>
+        <p>老八</p>
+        <p>老九</p>
+        <p>老十</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-属性选择器</title>
+    <style>
+    /* 写法1 */
+    [title] {
+        color: red;
+    }
+    /* 写法2 */
+    [title="sing"] {
+        font-size: 20px;
+    }
+    /* 写法3: 前缀匹配 */
+    [title^="j"] {
+        font-size: 30px;
+    }
+    /* 写法4: 后缀匹配 */
+    [title$="p"] {
+        font-size: 40px;
+    }
+    /* 写法5: 包含匹配 */
+    [title*="a"] {
+        font-size: 50px;
+    }
+
+    </style>
+</head>
+<body>
+<div title="sing">唱</div>
+<div title="jump">跳</div>
+<div title="rap">rap</div>
+<div title="ball">篮球</div>
+</body>
+</html>

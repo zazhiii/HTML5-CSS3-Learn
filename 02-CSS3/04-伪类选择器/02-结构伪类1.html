@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-结构伪类1</title>
+    <style>
+        /* 选中的是 div 的第一个儿子p元素 --> 结构1 */
+        /*
+        div > p:first-child {
+            color: deepskyblue;
+        }
+        */
+
+
+        /* 没有选中元素 --> 结构2 */
+        /*
+        div > p:first-child {
+            color: deepskyblue;
+        }
+        */
+
+
+        /* 选中div的后代p, p的父级是谁无所谓, 但必须是父亲的第一个儿子 --> 结构3 */
+        /*
+        div p:first-child {
+            color: deepskyblue;
+        }
+        */
+
+
+        /* p的父级是谁无所谓, 但必须是父亲的第一个儿子 --> 结构3 */
+        p:first-child {
+            color: deepskyblue;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 结构1 -->
+<!--
+<div>
+    <p>老大</p>
+    <p>老二</p>
+    <p>老三</p>
+    <p>老四</p>
+</div>
+-->
+
+<!-- 结构2 -->
+<!--
+<div>
+    <span>老大</span>
+    <p>老二</p>
+    <p>老三</p>
+    <p>老四</p>
+</div>
+-->
+
+<!-- 结构3 -->
+<p>测试0</p>
+<div>
+    <p>测试1</p>
+    <marquee>
+        <p>测试2</p>
+        <p>老大</p>
+    </marquee>
+    <p>老二</p>
+    <p>老三</p>
+    <p>老四</p>
+</div>
+
+</body>
+</html>

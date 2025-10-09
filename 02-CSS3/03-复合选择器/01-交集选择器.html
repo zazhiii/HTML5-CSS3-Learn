@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-交集选择器</title>
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: pink;
+        }
+
+        /* 交集选择器 */
+        /* 🌟常用: 标签 且 类名 */
+        p.beauty{
+            color: green;
+        }
+
+
+        .rich.beauty{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">富豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="rich beauty">富豪明星王五</h2>
+    <hr>
+    <p class="beauty">小狗</p>
+    <p class="beauty rich">小猪</p>
+</body>
+</html>
