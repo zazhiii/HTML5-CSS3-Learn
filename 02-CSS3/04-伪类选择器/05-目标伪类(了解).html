@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-目标伪类</title>
+    <style>
+      div {
+        background-color: lightgray;
+        height: 100px;
+        width: 100px;
+      }
+
+      div:target {
+        background-color: orange;
+      }
+    </style>
+</head>
+<body>
+<a href="#one">go 1</a>
+<a href="#two">go 2</a>
+<a href="#three">go 3</a>
+<a href="#four">go 4</a>
+<a href="#five">go 5</a>
+<div id="one">1</div>
+<br>
+<div id="two">2</div>
+<br>
+<div id="three">3</div>
+<br>
+<div id="four">4</div>
+<br>
+<div id="five">5</div>
+</body>
+</html>
