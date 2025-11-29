@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vertical-align</title>
+    <style>
+        div {
+            font-size: 100px;
+            background-color: lightgray;
+        }
+
+        .span0 {
+            font-size: 40px;
+            background-color: lightyellow;
+            vertical-align: baseline; /* 默认值，基线对齐 */
+        }
+
+        .span1 {
+            font-size: 50px;
+            background-color: lightblue;
+            vertical-align: top;
+        }
+
+        .span2 {
+            font-size: 30px;
+            background-color: lightgreen;
+            vertical-align: middle;
+        }
+
+        .span3 {
+            font-size: 70px;
+            background-color: lightcoral;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+<div>
+    x<span class="span0">x</span>x<span class="span1">x</span>x<span class="span2">x</span>x<span class="span3">x</span>
+</div>
+</body>
+</html>

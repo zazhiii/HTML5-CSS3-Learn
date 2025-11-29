@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-行高</title>
+    <style>
+        /* 属性名： line-height */
+        /* 注意点1： */
+        /* 注意点2：行高可以继承 */
+        /* 注意点3：设置了height容器就是height高度，没设置则高度为line-height的高度 */
+
+        /* 应用场景：*/
+        /* 1. 调整多行文字间距 */
+        /* 2. 单行文字垂直居中 */
+        .d1 {
+            line-height: normal; /* 默认值，正常行高 */
+        }
+        .d2 {
+            line-height: 30px; /* 固定行高为30像素 */
+        }
+        .d3 {
+            line-height: 1.5; /* 行高为字体大小的1.5倍 🌟常用 */
+        }
+        .d4 {
+            line-height: 150%; /* 行高为字体大小的150% */
+        }
+
+        div {
+            font-size: 40px;
+            background-color: orange;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">Hello World!</div>
+    <hr>
+    <div class="d2">Hello World!</div>
+    <hr>
+    <div class="d3">Hello World!</div>
+    <hr>
+    <div class="d4">Hello World!</div>
+    <hr>
+    <div class="d5">Hello World!</div>
+    <hr>
+    <div class="d6">Hello World!</div>
+</body>
+</html>
