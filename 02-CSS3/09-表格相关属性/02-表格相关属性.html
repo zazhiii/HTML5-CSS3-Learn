@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-表格相关属性</title>
+    <style>
+        table {
+            border: 2px green solid;
+
+            /* 控制列宽 */
+            table-layout: fixed;
+            /* 控制单元格间距 */
+            border-spacing: 10px 5px;
+            /* 合并相邻单元格边框 上面的间距属性就失效了 */
+            border-collapse: collapse;
+            /* 控制空单元格的显示 要生效的话不能设置合并表格边框 */
+            empty-cells: hide;
+        }
+
+        td, th {
+            border: 1px blue solid;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>人员信息</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张三</td>
+        <td>18</td>
+        <td>男</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>19</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>王五</td>
+        <td>20</td>
+        <td>男</td>
+    </tr>
+    <tr>
+        <td>赵六</td>
+        <td>21</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
