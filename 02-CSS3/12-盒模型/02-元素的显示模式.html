@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-元素的显示模式</title>
+
+    <style>
+        .d1 {
+            background-color: skyblue;
+        }
+        .d2 {
+            background-color: orange;
+        }
+        .s1 {
+            background-color: lightgreen;
+        }
+        .s2 {
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- 块元素 -->
+<!-- 独占一行 -->
+<!-- 宽度撑满父元素，高度由内容决定，可以通过css设置宽高 -->
+<div class="d1">div1</div>
+<div class="d2">div2</div>
+
+<hr>
+
+<!-- 行内元素 -->
+<!-- 不独占一行 -->
+<!-- 宽高由内容决定，不能通过css设置宽高 -->
+<span class="s1">span1</span>
+<span class="s2">span2</span>
+
+<hr>
+
+<!-- 行内块元素 -->
+<!-- 不独占一行 -->
+<!-- 宽高可以通过css设置 -->
+<img src="../images/background-image.png" alt="图片" class="d1">
+<img src="../images/background-image.png" alt="图片" class="d2">
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-常用长度单位</title>
+    <style>
+        /* 1. px */
+        #d1 {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: skyblue;
+        }
+
+        /* 2. em (相当于当前元素或父元素font-size的倍数) */
+        #d2 {
+            width: 10em;
+            height: 10em;
+            font-size: 20px;
+            background-color: orange;
+        }
+
+        /* 3. rem (相当于根元素font-size的倍数) */
+        #d3 {
+            width: 10rem;
+            height: 10rem;
+            font-size: 20px;
+            background-color: orange;
+        }
+
+        /* 4. % (相对于父元素的百分比) */
+        #d4 {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: skyblue;
+        }
+        .inside {
+            width: 50%;
+            height: 25%;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div id="d1">1</div>
+<hr>
+<div id="d2">1</div>
+<hr>
+<div id="d3">1</div>
+<hr>
+<div id="d4">
+    <div class="inside"></div>
+</div>
+
+
+</body>
+</html>
