@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .d1 {
+            height: 600px;
+            background-color: slateblue;
+            padding: 20px;
+
+            /* 父元素的属性会继承给子元素 */
+
+            /*和布局相关的属性均不会继承*/
+
+            font-size: 50px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .d2 {
+            height: 400px;
+            background-color: tomato;
+            padding: 20px;
+
+
+        }
+
+        .d3 {
+            height: 200px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="d1">
+    <div class="d2">
+        <div class="d3">nihao</div>
+    </div>
+</div>
+
+</body>
+</html>

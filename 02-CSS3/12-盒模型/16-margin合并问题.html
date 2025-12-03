@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: tomato;
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            background-color: skyblue;
+            margin-top: 50px;
+        }
+
+        /* margin合并问题：相邻盒模型垂直方向的margin会合并为一个，取最大值 */
+    </style>
+</head>
+<body>
+<div class="box box1">1</div>
+<div class="box box2">2</div>
+</body>
+</html>

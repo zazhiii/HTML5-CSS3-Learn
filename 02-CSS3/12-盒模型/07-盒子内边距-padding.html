@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-padding</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            font-size: 40px;
+
+            /* 内边距 */
+            padding: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding: 10px 20px; /* 上下  右左 */
+            padding: 10px 20px 30px; /* 上  右左  下 */
+            padding: 10px 20px 30px 40px; /* 上 右 下 左 */
+
+            background-color: skyblue;
+        }
+
+        span {
+            background-color: greenyellow;
+            /* 行内元素的上下padding不实际占位置，会覆盖上下的元素 */
+            padding: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">nihao</div>
+
+    <hr>
+
+<span>nihao</span>
+
+</body>
+</html>

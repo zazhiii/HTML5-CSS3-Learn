@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 给容器内第一个元素加上外边距、给最后一个元素加下外边距
+ 都会被父元素抢走*/
+        .outer {
+            background-color: lightgray;
+            width: 300px;
+
+        /*    解决方案1*/
+        /*    padding: 1px;*/
+
+        /*    解决方案2*/
+        /*    border: 1px solid tomato;*/
+
+        /*    解决方案3*/
+            overflow: hidden;
+
+        }
+
+        .inner1 {
+            background-color: tomato;
+            width: 100px;
+            height: 100px;
+
+            /* 有问题 */
+            margin-top: 50px;
+        }
+
+        .inner2 {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+
+            /* 有问题 */
+            margin-bottom: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner1">
+        inner1
+    </div>
+    <div class="inner2">
+        inner2
+    </div>
+</div>
+<div>123123</div>
+
+</body>
+</html>
