@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+/*<!-- 问题：子元素全部浮动了，父元素没高度了        -->*/
+
+        .outer {
+            background-color: gray;
+            border: 1px solid black;
+
+        /*    方案1： 给父元素设置一个高度*/
+        /*    height: 120px;*/
+
+        /*    方案2：父元素浮动*/
+        /*    float: left;*/
+
+            /* 方案3*/
+            /*overflow: hidden;*/
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .box1, .box2, .box3 {
+            float: left;
+        }
+
+        .box4 {
+            /* 方案4: 给子元素最后加一个看不见的div */
+            clear: both;
+        }
+
+        /* 方案5: 原理也是方案4 🌟推荐*/
+        .outer::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box4"></div>
+</div>
+<!--<div style="background-color:skyblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse eveniet expedita fuga fugiat id quae quibusdam. Debitis eum laudantium omnis quis sed. Accusamus aspernatur consequatur consequuntur debitis dolorum et, ex fugit modi nisi quam quia quo rerum tempora tenetur voluptates. Ad animi atque consequatur dignissimos harum nemo neque nobis quis. Amet animi architecto consequatur distinctio dolor dolore dolores ducimus eligendi, illum inventore, ipsum molestias nemo quae quaerat recusandae repudiandae sapiente sequi veniam veritatis voluptate! Animi asperiores aspernatur aut blanditiis culpa dolorum eligendi est id nemo officia perferendis, quae ratione temporibus vero voluptates? Alias aspernatur esse et exercitationem sint suscipit!</div>-->
+
+</body>
+</html>

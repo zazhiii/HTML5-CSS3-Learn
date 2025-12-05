@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20-布局技巧</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+
+            /* 解决margin塌陷 */
+            overflow: hidden;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+
+            /* div 水平居中 */
+            margin: 0 auto;
+            /* div 垂直居中 */
+            margin-top: 150px;
+
+            /* 文字水平居中*/
+            text-align: center;
+            /* 文字垂直居中*/
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner">
+        INNER
+    </div>
+</div>
+
+</body>
+</html>

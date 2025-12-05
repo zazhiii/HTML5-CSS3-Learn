@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20-布局技巧</title>
+
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+
+            /* 水平居中 */
+            text-align: center;
+
+            line-height: 400px;
+            /* 父元素的font-size会影响子元素的 vertical-align: middle;*/
+            /* 设置为0才能居中 */
+            font-size: 0px;
+        }
+
+        /* 垂直居中两个步骤： */
+        /* 1. 父元素 font-size: 0; line-height=height*/
+        /* 2. 子元素 vertical-align: middle; */
+
+        span {
+            vertical-align: middle;
+            font-size: 40px;
+
+            background-color: tomato;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="outer">
+    <span>你好</span>
+    <img src="../images/background-image.png" alt="">
+</div>
+
+</body>
+</html>

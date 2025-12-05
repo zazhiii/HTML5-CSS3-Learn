@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            background-color: tomato;
+
+            /* 方案3 */
+            /* 这个问题最终是文字的基线造成的，设置为0大小皆可解决 */
+            font-size: 0;
+        }
+
+        img {
+
+            /* 方案1 */
+            /* 图片默认是基线对齐，下方会有空隙 */
+            /* 设置任何值除了baseline都能消除 */
+            vertical-align: middle;
+
+            /* 方案2 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <img src="../images/background-image.png" alt="">
+</div>
+
+</body>
+</html>

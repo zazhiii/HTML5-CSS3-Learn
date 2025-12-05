@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+/*<!-- 前面的兄弟不影响，影响后面的兄弟 -->*/
+/*<!-- 不能撑起父元素的高度了 -->*/
+        .outer {
+            background-color: gray;
+            border: 1px solid black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            margin: 20px;
+        }
+        .box1, .box2, .box3 {
+            float: left;
+        }
+
+        .box4 {
+            width: 110px;
+            height: 110px;
+            background-color: skyblue;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="box box0">0</div>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+<!--<div style="background-color:skyblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse eveniet expedita fuga fugiat id quae quibusdam. Debitis eum laudantium omnis quis sed. Accusamus aspernatur consequatur consequuntur debitis dolorum et, ex fugit modi nisi quam quia quo rerum tempora tenetur voluptates. Ad animi atque consequatur dignissimos harum nemo neque nobis quis. Amet animi architecto consequatur distinctio dolor dolore dolores ducimus eligendi, illum inventore, ipsum molestias nemo quae quaerat recusandae repudiandae sapiente sequi veniam veritatis voluptate! Animi asperiores aspernatur aut blanditiis culpa dolorum eligendi est id nemo officia perferendis, quae ratione temporibus vero voluptates? Alias aspernatur esse et exercitationem sint suscipit!</div>-->
+
+</body>
+</html>
