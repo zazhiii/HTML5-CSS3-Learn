@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .outer {
+            height: 400px;
+            width: 800px;
+            background-color: gray;
+            position: relative;
+        }
+        .inner {
+            height: 200px;
+            width: 100px;
+            background-color: tomato;
+            font-size: 20px;
+
+            position: absolute;
+
+            /* 垂直水平居中 */
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            /* 方案2 */
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*margin-left: -50px;*/
+            /*margin-top: -100px;*/
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner">你好啊</div>
+</div>
+
+</body>
+</html>

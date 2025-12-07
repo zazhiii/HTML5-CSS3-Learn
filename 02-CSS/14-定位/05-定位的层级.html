@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: skyblue;
+            padding: 20px;
+            position: relative;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            font-size: 40px;
+        }
+        .box1 {
+            background-color: tomato;
+        }
+        .box2 {
+            background-color: gold;
+            position: relative;
+            top: -150px;
+            left: 50px;
+
+            z-index: 1;
+        }
+        .box3 {
+            background-color: limegreen;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+        }
+        .box4 {
+            background-color: violet;
+            position: fixed;
+            top: 180px;
+            left: 180px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+</div>
+
+</body>
+</html>
