@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box-sizing {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            padding: 5px;
+            border: 5px solid blue;
+            /* 边框和padding不会撑大盒子，而是压缩内容区 */
+            box-sizing: border-box;
+        }
+
+        .resize {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            /* 盒子可调整大小 */
+            resize: both; /* vertical horizontal both */
+            overflow: hidden;
+        }
+
+        .box-shadow {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .box-shadow1 {
+            box-shadow: 10px 10px;
+        }
+
+        .box-shadow2 {
+            box-shadow: 10px 10px skyblue;
+        }
+
+        .box-shadow3 {
+            box-shadow: 10px 10px 10px;
+        }
+
+        .box-shadow4 {
+            box-shadow: 10px 10px 10px skyblue;
+        }
+    </style>
+
+</head>
+<body>
+<div class="box-sizing">box-sizing</div>
+<hr>
+<div class="resize">resize</div>
+<hr>
+<div>
+    <div class="box-shadow box-shadow1">🌟box-shadow</div>
+    <div class="box-shadow box-shadow2">🌟box-shadow</div>
+    <div class="box-shadow box-shadow3">🌟box-shadow</div>
+    <div class="box-shadow box-shadow4">🌟box-shadow</div>
+</div>
+
+</body>
+</html>
